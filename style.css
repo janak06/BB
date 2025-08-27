@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Ariana Pro";
+  src: url("fonts/Ariana Pro Regular.otf") format("opentype"),
+  url('fonts/fonnts.com-Adrianna_Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+body {
+  font-family: "Oswald", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+.slider{
+  font-family: "Ariana Pro", sans-serif;
+  margin-top: 40px;
+  width: 50%;
+}
+
+.logo img {
+  max-height: 50px; /* logo ki height set karne ke liye */
+  width: auto;
+}
+
+.btn {
+  background: #33009b;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 20px;
+  font-family: "Ariana Pro", sans-serif;
+}
+.btn:hover {
+  background: #3b0ca6;
+}
+
+/* Navbar */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #f6f0e9;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  font-family: "Ariana Pro", sans-serif;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  text-decoration: underline;
+  border-radius: 5px;
+  text-underline-offset: 8px;
+  text-decoration-color: #33009b;
+  text-decoration-thickness: 1.5px;
+}
+
+#home {
+  background: #f6f0e9;
+}
+#about {
+  background: #33009b;
+}
+#services {
+  background: #f6f0e9;
+}
+#testimonial {
+  background: #ff9801;
+}
+#contact {
+  background: #f6f0e9;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  background: #fff;
+  flex-wrap: wrap;
+}
+.hero-text {
+  flex: 1;
+  margin-right: 20px;
+  text-align: left;
+}
+.hero-text h1 {
+  font-size: 92px;
+  color: #f97316;
+  margin-bottom: 20px;
+  font-weight: bold;
+  line-height: 1;
+}
+.hero-text p {
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-family: "Ariana Pro", sans-serif;
+  line-height: 1;
+}
+.hero img {
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Who we are */
+.purple-section {
+  color: white;
+  padding: 110px 10%;
+  text-align: center;
+  padding-bottom: 150px;
+}
+.purple-section h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.purple-section .birds {
+  position: relative;
+  margin-top: 40px;
+}
+.purple-section .birds img {
+  max-width: 250px;
+  position: absolute;
+  top: 0;
+}
+
+/* What we do */
+section {
+  padding: 100px 10%;
+  text-align: center;
+}
+section h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.services {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.service h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: "Ariana Pro", sans-serif;
+}
+.service .btn{
+  padding: 4px 10px;
+}
+.service p {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.service img{
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Testimonial */
+#testimonial {
+  background: #f97316;
+  color: #fff;
+  padding: 80px 10%;
+  text-align: center;
+  padding-bottom: 0;
+}
+#testimonial h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+#testimonial p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+#testimonial img {
+  max-width: 400px;
+  margin-top: 30px;
+}
+
+/* Footer */
+footer {
+  background: #f2f2f2;
+  text-align: center;
+  padding: 30px 10%;
+  font-size: 14px;
+}
+
+.heroImage {
+  margin-top: 40px;
+}
+
+.slick-prev, .slick-next {
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  color: #fff !important;
+  border: none !important;
+  font-size: 34px !important;
+  padding: 10px !important;
+  cursor: pointer !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  display: none !important;  
+}
+
+.slick-prev {
+  left: 320px !important;
+}
+
+.slick-next {
+  right: 350px !important;
+}
+
+
+.contactUs{
+  text-align: left;
+  font-family: "Ariana Pro", sans-serif;
+}
+
+.bird-right{
+  margin-left: 12rem;
+}
+.bird-left{
+  margin-left: -28rem;
+}
+@media (min-width: 1400px) {
+  .heroImage {
+    margin-right: 8rem;
+  }
+  .hero-text {
+    margin-left: 8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .bird-right{
+    margin-left: 3rem !important;
+  }
+  .bird-left{
+    margin-left: -9rem !important;
+  }
+  .purple-section{
+    margin-bottom: -80px !important;
+  }
+  .purple-section .birds img{
+    max-width: 110px !important;
+  }
+  #testimonial{
+    padding-bottom: 0px !important;
+  }
+  #testimonial img {
+    max-width: 245px;
+    margin-top: 30px;
+  }
+  .testimonial-text p{
+    font-size: 20px !important;
+  }
+}
+
+/* Responsive */
+@media (max-width: 880px) {
+  header {
+    padding: 15px 20px;
+    justify-content: center;
+  }
+  
+  header nav {
+    display: none;
+  }
+  
+  header .btn {
+    display: none;
+  }
+  
+  .logo {
+    margin: 0 auto;
+  }
+  
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 5%;
+    margin-top: 20px;
+  }
+  
+  .hero-text h1 {
+    font-size: 48px;
+  }
+  
+  .heroImage img{
+    display: none;
+  }
+  .hero-text p {
+    font-size: 24px;
+  }
+  
+  .hero-text {
+    margin-right: 0;
+    margin: 25px 0;
+  }
+  
+  .services {
+    flex-direction: column;
+  }
+  
+  .purple-section {
+    padding: 0px 0%;
+    padding-top: 30px;
+    margin-bottom: -40px;
+  }
+  
+  .purple-section h2 {
+    font-size: 36px;
+  }
+  
+  .purple-section .birds {
+    height: 150px;
+  }
+  
+  .purple-section .birds img {
+    max-width: 150px;
+  }
+  
+  #testimonial {
+    padding: 60px 5%;
+    padding-bottom: 0;
+  }
+  
+  #testimonial > div:first-child {
+    font-size: 48px;
+  }
+  
+  .slick-prev {
+    left: 20px !important;
+  }
+  
+  .slick-next {
+    right: 20px !important;
+  }
+  
+  .contactUs {
+    text-align: center;
+  }
+  .bird-right{
+    margin-left: 6rem;
+  }
+  .bird-left{
+    margin-left: -14rem;
+  }
+}
