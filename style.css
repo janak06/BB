@@ -171,7 +171,6 @@ section h2 {
 .services {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
   gap: 20px;
 }
 .service {
@@ -195,7 +194,6 @@ section h2 {
 }
 
 .service img{
-  object-fit: cover;
   width: 100%;
 }
 
@@ -328,6 +326,10 @@ footer {
     padding: 60px 5%;
     margin-top: 20px;
   }
+
+  .hero-text{
+    text-align: center;
+  }
   
   .hero-text h1 {
     font-size: 48px;
@@ -387,10 +389,19 @@ footer {
   .contactUs {
     text-align: center;
   }
+  .social-handles{
+    justify-content: center;
+  }
   .bird-right{
     margin-left: 6rem;
   }
   .bird-left{
     margin-left: -14rem;
+  }
+  .whoarewe{
+    display: none;
+  }
+  .whoarewe1{
+    display: block !important;
   }
 }
