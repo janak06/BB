@@ -405,4 +405,12 @@ footer {
   .whoarewe1{
     display: block !important;
   }
+
+  .service {
+    margin-bottom: 55px;
+  }
+  
+  .service:last-child {
+    margin-bottom: 0;
+  }
 }
